@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#avatarImg img {
+    width: 100px; /* Defina a largura da imagem */
+    height: 100px; /* Defina a altura da imagem */
+    border-radius: 50%; /* Faça a imagem ter bordas arredondadas */
+    border: 2px solid #fff; /* Adicione uma borda branca */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adicione uma sombra */
+}
+#bio{
+    text-align: center;
+    font-size: 18px;
+}
+
+/* centralizar as divs  */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
