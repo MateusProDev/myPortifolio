@@ -14,7 +14,6 @@ fetch('http://api.github.com/users/MateusProDev')
 
     const avatarImg = document.getElementById('avatarImg');
     const bio = document.getElementById('bio');
-    const myProject = document.getElementById('myProject');
 
     const img = document.createElement('img')
     img.src = avatarUrl
@@ -22,5 +21,13 @@ fetch('http://api.github.com/users/MateusProDev')
     
     avatarImg.appendChild(img)
     bio.textContent= bioGitHub
-    myProject.textContent= `Numero de repositorios públicos no GitHub: ${repo}`
 })
+
+// logica do header responsivo 
+const lines = document.querySelector('.lines');
+const navLinks = document.querySelector('.nav-links');
+
+lines.addEventListener('click', () => {
+  lines.classList.toggle('active');
+  navLinks.classList.toggle('active');
+});

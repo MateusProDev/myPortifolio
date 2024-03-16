@@ -1,23 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Perfil do GitHub</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <!-- Div onde o avatar será exibido -->
+      <section class="flexContent" id="profile">
         <div id="avatarImg" class="center"></div>
-        
-        <!-- Parágrafo onde a biografia será exibida -->
+        <h1>Mateus Ferreira</h1>
         <p id="bio" class="center"></p>
-
-        <!-- Parágrafo onde o número de repositórios será exibido -->
-        <p id="myProject" class="center"></p>
+        <button class="btnProfile">Download CV</button>
+        <button class="btnProfile">GitHub</button>
+        <hr />
+        <div id="containerIcons" class="center">
+          <div id="infoIcons">
+            <div class="iconsFlex">
+              <img src="img/Email.png" alt="email" />
+              <div class="boxIcons">
+                <p>EMAIL:</p>
+                <em>mateusprodev@gmail.com</em>
+              </div>
+            </div>
+            <div class="iconsFlex">
+              <img src="img/Call.png" alt="telefone" />
+              <div class="boxIcons">
+                <p>TELEPHONE:</p>
+                <em>(85) 9 9797-7730</em>
+              </div>
+            </div>
+            <div class="iconsFlex">
+              <img src="img/Map Marker-1.png" alt="Localidade" />
+              <div class="boxIcons">
+                <p>LOCALITY:</p>
+                <em>Fortaleza-CE</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flexContent" id="content">
+        <header>
+          <nav>
+            <div class="lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div id="about">
+          <div>
+            <div class="title-container">
+              <h1 class="title">About Me</h1>
+              <hr id="lineAbout" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              pariatur repellendus recusandae at dolor distinctio ab laborum,
+              soluta harum quisquam atque fugit, possimus quae culpa voluptates
+              numquam esse cupiditate ea!
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+              laudantium, porro reiciendis aliquid perferendis optio consectetur
+              commodi omnis libero exercitationem eum magni? Ex illo deserunt
+              dolores labore exercitationem, officia voluptas.
+            </p>
+          </div>
+          <div id="containerCards">
+            <h2>What I'm Doing</h2>
+            <div id="cards">
+              <div class="boxCards iconsFlex">
+                <img src="img/Window Color.png" alt="img" />
+                <div class="cardsText">
+                  <h3>Web Design</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi rem nesciunt illum pariatur non minima illo cum
+                    inventore.
+                  </p>
+                </div>
+              </div>
+              <div class="boxCards iconsFlex">
+                <img src="img/Google Code.png" alt="img" />
+                <div class="cardsText">
+                  <h3>Web Development</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi rem nesciunt illum pariatur non minima illo cum
+                    inventore.
+                  </p>
+                </div>
+              </div>
+              <div class="boxCards iconsFlex">
+                <img src="img/JavaScript.png" alt="img" />
+                <div class="cardsText">
+                  <h3>Front-End</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi rem nesciunt illum pariatur non minima illo cum
+                    inventore.
+                  </p>
+                </div>
+              </div>
+              <div class="boxCards iconsFlex">
+                <img src="img/Rest API.png" alt="img" />
+                <div class="cardsText">
+                  <h3>Beck-End</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi rem nesciunt illum pariatur non minima illo cum
+                    inventore.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
