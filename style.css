@@ -305,7 +305,7 @@ nav {
     border-radius: 0 0 20px 0;
     padding: 15px 10px;
     background-color: #3f3f3f;
-    box-shadow: 2px 4px 4px 4px #3a3a3a;
+    box-shadow: -1px -1px 4px 4px #3a3a3a67;
 
   }
   .nav-links {
@@ -349,7 +349,7 @@ nav {
     text-align: center;
     animation: aparecer 0.5s forwards ease;
     border-radius: 0 20px 20px 0;
-    box-shadow: 4px 4px 4px #313131;
+    box-shadow: 4px 4px 4px #3131317c;
     z-index: 1;
   }
 
