@@ -1,4 +1,4 @@
-fetch('http://api.github.com/users/MateusProDev')
+/*fetch('http://api.github.com/users/MateusProDev')
 .then(response => {
     if (!response.ok) {
         throw new Error('Error ao buscar dados do perfil do github');
@@ -21,7 +21,7 @@ fetch('http://api.github.com/users/MateusProDev')
     
     avatarImg.appendChild(img)
     bio.textContent= bioGitHub
-})
+})*/
 
 // logica do header responsivo 
 const lines = document.querySelector('.lines');

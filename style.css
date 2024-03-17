@@ -90,6 +90,7 @@ hr {
 .boxIcons img,
 p {
   margin: 0px;
+  font-size: 16px !important;
 }
 
 /* cards responsivos */
