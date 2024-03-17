@@ -421,3 +421,16 @@ nav {
     box-shadow: 2px 2px 2px 4px #00000023;
   }
 }
+
+/* Classe para animação */
+.animate-slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Classe para ativar a animação quando estiver visível */
+.animate-slide-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
