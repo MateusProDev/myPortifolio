@@ -6,6 +6,7 @@ body {
   color: #fff;
   display: flex;
   justify-content: center;
+  background-image: url('img/night-4702174_1920.jpg');
 }
 
 main {
@@ -42,7 +43,7 @@ main {
   height: 100px; /* Defina a altura da imagem */
   border-radius: 50%; /* Faça a imagem ter bordas arredondadas */
   border: 2px solid #fff; /* Adicione uma borda branca */
-  box-shadow: 4px 4px 4px #111; /* Adicione uma sombra */
+  box-shadow: 4px 4px 4px #333; /* Adicione uma sombra */
 }
 #bio {
   font-size: 18px;
@@ -51,11 +52,12 @@ main {
   margin: 20px 5px 0 0;
   padding: 4px 6px;
   background-color: #ddd;
-  box-shadow: 2px 2px 2px #222;
+  box-shadow: 2px 2px 2px #333;
   border: none;
+  border-radius: 5px;
 }
 .btnProfile:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 hr {
   margin: 20px 0;
@@ -103,9 +105,13 @@ p {
   width: 42%;
   background-color: #333333a1;
   padding: 20px;
-  margin: 5px;
+  margin: 10px;
   border-radius: 20px;
   z-index: 0;
+  box-shadow: 2px 2px 2px 4px #00000023;
+}
+.boxCards:hover{
+    transform: scale(1.01);
 }
 .boxCards img {
   width: 50px;
@@ -123,8 +129,8 @@ p {
 .flexContent {
   height: 78vh;
   padding: 40px 20px;
-  background-color: #3333338d;
-  box-shadow: 2px 2px 4px 4px #00000047;
+  background-color: #333333b6;
+  box-shadow: 2px 2px 4px 4px #00000023;
   margin: 40px 0;
   border-radius: 20px;
 }
@@ -203,12 +209,14 @@ nav {
 }
 
 /* conteudo do about  */
-
-#about {
+#myProjects{
+    margin-top: -50px !important;
+}
+#about, #myProjects {
   margin-top: -90px;
   padding: 10px;
 }
-#about h1 {
+#about h1, #myProjects h1 {
   font-size: 34px;
   text-align: right;
   padding-right: 10px;
@@ -233,10 +241,52 @@ nav {
   margin: 40px 15px -45px 0;
 }
 
-#about p {
+#about p, #myProjects p{
   margin: 20px 0;
   color: #e1e1e1;
+  font-size: 20px;
 }
+
+/* seção dos projetos  */
+/* cards responsivos */
+#cardsProjects {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralizar os cards horizontalmente */
+  }
+  
+  .boxCardsPro {
+    width: 42%;
+    height: 250px;
+    background-color: #333333a1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    z-index: 0;
+    box-shadow: 2px 2px 2px 4px #00000023;
+  }
+  .boxCardsPro:hover{
+      transform: scale(1.01);
+  }
+  .boxCardsPro img {
+    width: 200px;
+    height: 200px;
+  }
+  .cardsTextPro {
+    margin-left: 10px;
+  }
+  .cardsTextPro h3{
+    font-size: 20px;
+    margin-bottom: -10px;
+  }
+  .cardsTextPro p{
+    font-size: 16px !important;
+  }
+  .btnPro{
+    margin-top: -20px;
+  }
 
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
