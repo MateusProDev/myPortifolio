@@ -297,14 +297,15 @@ nav {
 @media screen and (max-width: 768px) {
   /* Estilo da lista de links de navegação */
   nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
     border-radius: 0 0 20px 0;
     padding: 15px 10px;
-    background-color: #333333a1;
+    background-color: #3f3f3f;
     box-shadow: 2px 4px 4px 4px #3a3a3a;
+
   }
   .nav-links {
     display: none;
@@ -398,5 +399,24 @@ nav {
   }
   #about{
     margin-top: -180px;
+  }
+  .boxCards {
+    width: 100%;
+    background-color: #333333a1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    z-index: 0;
+    box-shadow: 2px 2px 2px 4px #00000023;
+  }
+  .boxCardsPro {
+    width: 100%;
+    height: 250px;
+    background-color: #333333a1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    z-index: 0;
+    box-shadow: 2px 2px 2px 4px #00000023;
   }
 }
