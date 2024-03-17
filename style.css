@@ -287,6 +287,9 @@ nav {
   .btnPro{
     margin-top: -20px;
   }
+  #mac{
+    height: 130px;
+  }
 
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
