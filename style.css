@@ -158,13 +158,11 @@ header {
 .logo img {
   width: 80px;
 }
-
 /* Estilo do ícone de menu */
 .lines {
   display: none;
   cursor: pointer;
 }
-
 .line {
   width: 25px;
   height: 3px;
@@ -188,21 +186,19 @@ nav {
   padding: 0;
   display: flex;
 }
-
 .nav-links li {
   margin: 0 10px;
 }
 .nav-links li:hover {
-  transform: scale(1.05);
+  transform: scale(1.1) !important;
 }
-
 .nav-links a {
   text-decoration: none;
   color: #fff;
 }
-
 .nav-links a:hover {
   color: #ccc;
+  transform: scale(1.1) !important;
 }
 .nav-links li:first-child a {
   color: #f29d38;
