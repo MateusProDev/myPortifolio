@@ -112,7 +112,7 @@ p {
   box-shadow: 2px 2px 2px 4px #00000023;
 }
 .boxCards:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.02) !important;
   box-shadow: 1px 1px 4px 2px #f29e384b !important;
 }
 .boxCards img {
@@ -269,7 +269,7 @@ nav {
   box-shadow: 2px 2px 2px 4px #00000023;
 }
 .boxCardsPro:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.02) !important;
   box-shadow: 1px 1px 4px 2px #f29e384b !important;
 }
 .boxCardsPro img {
@@ -318,7 +318,7 @@ nav {
   box-shadow: 2px 2px 2px 4px #00000023;
 }
 .boxCardsTech:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.02) !important;
   box-shadow: 1px 1px 4px 2px #f29e384b !important;
 }
 .boxCardsTech img {
