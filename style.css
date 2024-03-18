@@ -112,7 +112,7 @@ p {
   box-shadow: 2px 2px 2px 4px #00000023;
 }
 .boxCards:hover {
-  transform: scale(1.01);
+  transform: scale(1.01) !important;
 }
 .boxCards img {
   width: 50px;
