@@ -149,6 +149,7 @@ header {
   align-items: center;
   text-align: center;
   border-radius: 20px 0 20px 0;
+  z-index: 999;
 }
 
 /* Estilo do logotipo */
@@ -205,16 +206,16 @@ nav {
 }
 
 /* conteudo do about  */
-#myProjects {
+#myProjects, #tecnologys {
   margin-top: -50px !important;
 }
 #about,
-#myProjects {
+#myProjects, #tecnologys {
   margin-top: -90px;
   padding: 10px;
 }
 #about h1,
-#myProjects h1 {
+#myProjects h1, #tecnologys h1 {
   font-size: 34px;
   text-align: right;
   padding-right: 10px;
@@ -240,7 +241,7 @@ nav {
 }
 
 #about p,
-#myProjects p {
+#myProjects p, #tecnologys p {
   margin: 20px 0;
   color: #e1e1e1;
   font-size: 20px;
@@ -289,6 +290,40 @@ nav {
 #mac {
   height: 130px;
 }
+
+/* seção de contatos  */
+/* cards responsivos */
+.cardsTechs{
+  margin-top: -30px !important;
+}
+#cardsTech {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center; /* Centralizar os cards horizontalmente */
+}
+
+.boxCardsTech {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: #333333a1;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  z-index: 0;
+  box-shadow: 2px 2px 2px 4px #00000023;
+}
+.boxCardsTech:hover {
+  transform: scale(1.01) !important;
+}
+.boxCardsTech img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
 
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
