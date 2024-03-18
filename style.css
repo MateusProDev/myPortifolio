@@ -206,16 +206,16 @@ nav {
 }
 
 /* conteudo do about  */
-#myProjects, #tecnologys {
+#myProjects, #technology {
   margin-top: -50px !important;
 }
 #about,
-#myProjects, #tecnologys {
+#myProjects, #technology {
   margin-top: -90px;
   padding: 10px;
 }
 #about h1,
-#myProjects h1, #tecnologys h1 {
+#myProjects h1, #technology h1 {
   font-size: 34px;
   text-align: right;
   padding-right: 10px;
@@ -241,7 +241,7 @@ nav {
 }
 
 #about p,
-#myProjects p, #tecnologys p {
+#myProjects p, #technology p {
   margin: 20px 0;
   color: #e1e1e1;
   font-size: 20px;
