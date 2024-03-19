@@ -363,6 +363,16 @@ hr {
   margin: 10px 0; /* Espaçamento em cima e embaixo */
 }
 
+#imgTop{
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
+}
+#imgTop:hover{
+  transform: scale(1.1);
+}
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
   /* Estilo da lista de links de navegação */
