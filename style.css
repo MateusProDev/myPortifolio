@@ -207,16 +207,19 @@ nav {
 }
 
 /* conteudo do about  */
-#myProjects, #technology {
+#myProjects,
+#technology {
   margin-top: -50px !important;
 }
 #about,
-#myProjects, #technology {
+#myProjects,
+#technology {
   margin-top: -90px;
   padding: 10px;
 }
 #about h1,
-#myProjects h1, #technology h1 {
+#myProjects h1,
+#technology h1 {
   font-size: 34px;
   text-align: right;
   padding-right: 10px;
@@ -242,7 +245,8 @@ nav {
 }
 
 #about p,
-#myProjects p, #technology p {
+#myProjects p,
+#technology p {
   margin: 20px 0;
   color: #e1e1e1;
   font-size: 20px;
@@ -295,7 +299,7 @@ nav {
 
 /* seção de contatos  */
 /* cards responsivos */
-.cardsTechs{
+.cardsTechs {
   margin-top: -30px !important;
 }
 #cardsTech {
@@ -327,6 +331,37 @@ nav {
   margin: auto;
 }
 
+/* footer  */
+/* Estilos para o footer */
+footer {
+  color: #c9d1d9; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para os detalhes (summary) */
+details summary {
+  font-size: 20px;
+  color: #f29d38; /* Cor do texto do summary */
+  font-weight: bold; /* Negrito */
+  cursor: pointer; /* Ícone de cursor de apontador */
+}
+
+/* Estilos para as listas dentro dos detalhes */
+details ul {
+  list-style-type: none; /* Remover marcadores de lista */
+  padding-left: 0; /* Remover espaçamento à esquerda */
+}
+
+/* Estilos para os parágrafos dentro das listas */
+details p {
+  margin: 0; /* Remover margens */
+}
+
+/* Estilos para as linhas horizontais */
+hr {
+  border-color: #4e4e4e !important; /* Cor da linha */
+  margin: 10px 0; /* Espaçamento em cima e embaixo */
+}
 
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
@@ -340,7 +375,6 @@ nav {
     padding: 15px 10px;
     background-color: #3f3f3f;
     box-shadow: -1px -1px 4px 4px #3a3a3a67;
-
   }
   .nav-links {
     display: none;
@@ -432,7 +466,7 @@ nav {
     background-color: #3a3a3a65;
     border-radius: 0;
   }
-  #about{
+  #about {
     margin-top: -180px;
   }
   .boxCards {
@@ -455,6 +489,30 @@ nav {
     box-shadow: 2px 2px 2px 4px #00000023;
   }
 }
+
+/* tech  */
+.boxCardsTech {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #333333a1;
+}
+.boxCardsTech:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 1px 1px 4px 2px #f29e384b !important;
+}
+.boxCardsTech img {
+  width: 40px;
+  height: 40px;
+}
+/* Estilos para os detalhes (summary) */
+details summary {
+  font-size: 24px;
+  color: #f29d38; /* Cor do texto do summary */
+  font-weight: bold; /* Negrito */
+  cursor: pointer; /* Ícone de cursor de apontador */
+}
+
 
 /* Classe para animação */
 .animate-slide-in {
