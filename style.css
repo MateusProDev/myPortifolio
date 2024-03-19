@@ -399,8 +399,8 @@ hr {
     left: 0;
     z-index: 2;
     border-radius: 0 0 20px 0;
-    padding: 15px 10px;
-    background-color: #3f3f3f;
+    padding: 20px 10px;
+    background-color: #3e3e3e;
     box-shadow: -1px -1px 4px 4px #3a3a3a67;
   }
   .nav-links {
@@ -411,7 +411,7 @@ hr {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 1px 1px 2px #00000068;
   }
 
   .lines {
@@ -437,9 +437,9 @@ hr {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 54px;
     left: 0;
-    background-color: #3f3f3f;
+    background-color: #3e3e3e;
     padding-bottom: 20px;
     text-align: center;
     animation: aparecer 0.5s forwards ease;
@@ -490,7 +490,7 @@ hr {
   }
   .flexContent {
     margin: 0;
-    background-color: #3a3a3a65;
+    background-color: #3e3e3e97;
     border-radius: 0;
   }
   #about {
