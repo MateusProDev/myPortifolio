@@ -364,7 +364,7 @@ hr {
 }
 /* butao para ir para o topo  */
 #imgTop {
-  position: fixed; /* Alterado para 'fixed' para que a imagem flutue na tela */
+  position: absolute; /* Alterado para 'fixed' para que a imagem flutue na tela */
   right: 10px;
   bottom: 15px;
   width: 40px;
