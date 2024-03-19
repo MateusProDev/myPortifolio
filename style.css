@@ -362,17 +362,34 @@ hr {
   border-color: #4e4e4e !important; /* Cor da linha */
   margin: 10px 0; /* Espaçamento em cima e embaixo */
 }
-
-#imgTop{
-  position: absolute;
+/* butao para ir para o topo  */
+#imgTop {
+  position: fixed; /* Alterado para 'fixed' para que a imagem flutue na tela */
   right: 10px;
   bottom: 15px;
   width: 40px;
   height: 40px;
+  animation: float 3s ease-in-out infinite; /* Alterada a duração para 3 segundos e o efeito para 'ease-in-out' */
 }
-#imgTop:hover{
+
+#imgTop:hover {
   transform: scale(1.1);
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Alterado de 'margin-top' para 'transform: translateY' */
+  }
+  50% {
+    transform: translateY(-5px); /* Movendo a imagem para cima */
+  }
+  100% {
+    transform: translateY(0); /* Voltando a imagem para a posição inicial */
+  }
+}
+
+
+
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
   /* Estilo da lista de links de navegação */
