@@ -364,7 +364,8 @@ hr {
 }
 /* butao para ir para o topo  */
 #imgTop {
-  position: absolute; /* Alterado para 'fixed' para que a imagem flutue na tela */
+  z-index: 999;
+  position: absolute !important; /* Alterado para 'fixed' para que a imagem flutue na tela */
   right: 10px;
   bottom: 15px;
   width: 40px;
@@ -374,6 +375,13 @@ hr {
 
 #imgTop:hover {
   transform: scale(1.1);
+}
+.topMobile{
+  display: none;
+}
+.topDesk{
+  display: block;
+  margin: 0 25px 10px 0;
 }
 
 @keyframes float {
@@ -515,9 +523,7 @@ hr {
     z-index: 0;
     box-shadow: 2px 2px 2px 4px #00000023;
   }
-}
-
-/* tech  */
+  /* tech  */
 .boxCardsTech {
   display: flex;
   width: 40px;
@@ -538,6 +544,14 @@ details summary {
   color: #f29d38; /* Cor do texto do summary */
   font-weight: bold; /* Negrito */
   cursor: pointer; /* Ícone de cursor de apontador */
+}
+
+.topDesk{
+  display: none;
+}
+.topMobile{
+  display: block;
+}
 }
 
 
