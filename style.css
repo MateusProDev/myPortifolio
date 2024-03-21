@@ -552,6 +552,103 @@ details summary {
   display: block;
 }
 }
+
+/* Estilos para dispositivos de tamanho médio (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    /* Ajuste o plano de fundo para tablets */
+    background-image: url("img/night-4702174_1920.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  main {
+    /* Ajuste a largura total para ocupar a tela do tablet */
+    width: 100%;
+    display: flex;
+    height: auto !important;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  #profile {
+    /* Esconda o perfil para dar mais espaço ao conteúdo */
+    display: none;
+  }
+
+  #content {
+    /* Ajuste as margens e a largura do conteúdo para ocupar toda a tela */
+    width: 100%;
+    margin-left: 0%;
+    height: auto;
+    overflow-y: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+
+  .flexContent {
+    /* Ajuste as margens para ocupar toda a tela */
+    margin: 0;
+    background-color: #3e3e3e97;
+    border-radius: 0;
+  }
+
+  #about {
+    /* Ajuste da margem superior para evitar sobreposição com o cabeçalho */
+    margin-top: -180px;
+  }
+
+  .boxCards {
+    /* Ajuste a largura dos cards para preencher a tela */
+    width: 100%;
+  }
+
+  .boxCardsPro {
+    /* Ajuste a largura dos cards para preencher a tela */
+    width: 100%;
+  }
+
+  /* Tech section */
+  .boxCardsTech {
+    /* Ajuste a largura dos cards para preencher a tela */
+    width: 40px;
+    height: 40px;
+    background-color: #333333a1;
+  }
+
+  .boxCardsTech:hover {
+    /* Ajuste do efeito hover */
+    transform: scale(1.1) !important;
+    box-shadow: 1px 1px 4px 2px #f29e384b !important;
+  }
+
+  .boxCardsTech img {
+    /* Ajuste do tamanho das imagens nos cards */
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Estilos para os detalhes (summary) */
+  details summary {
+    /* Ajuste do tamanho do texto do summary */
+    font-size: 24px;
+  }
+
+  /* Top button */
+  .topDesk {
+    /* Ocultar o botão de rolar para cima */
+    display: none;
+  }
+
+  .topMobile {
+    /* Exibir o botão de rolar para cima */
+    display: block;
+  }
+}
+
 /* Classe para animação */
 .animate-slide-in {
   opacity: 0;
