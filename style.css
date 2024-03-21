@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #121212;
-  color: #fff;
+  color: white;
   display: flex;
   justify-content: center;
   background-image: url("img/night-4702174_1920.jpg");
@@ -29,7 +29,7 @@ main {
 #content {
   width: 80%;
   margin-left: 25%;
-  height: auto;
+  height: 78.5vh;
   overflow-y: auto;
   padding: 40px 20px;
   display: flex;
@@ -42,7 +42,7 @@ main {
   width: 100px; /* Defina a largura da imagem */
   height: 100px; /* Defina a altura da imagem */
   border-radius: 50%; /* Faça a imagem ter bordas arredondadas */
-  border: 2px solid #fff; /* Adicione uma borda branca */
+  border: 2px solid white; /* Adicione uma borda branca */
   box-shadow: 4px 4px 4px #333; /* Adicione uma sombra */
 }
 #bio {
@@ -144,7 +144,7 @@ header {
   bottom: 40px;
   width: 40%;
   height: 80px;
-  color: #fff;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,7 +155,7 @@ header {
 
 /* Estilo do logotipo */
 .logo a {
-  color: #fff;
+  color: white;
 }
 .logo img {
   width: 80px;
@@ -168,7 +168,7 @@ header {
 .line {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: white;
   margin: 5px;
   margin-right: 40px;
 }
@@ -196,7 +196,7 @@ nav {
 }
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 .nav-links a:hover {
   color: #ccc;
@@ -397,7 +397,6 @@ hr {
 }
 
 
-
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
   /* Estilo da lista de links de navegação */
@@ -416,7 +415,7 @@ hr {
   }
 
   .nav-links a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     text-shadow: 1px 1px 2px #00000068;
@@ -553,8 +552,6 @@ details summary {
   display: block;
 }
 }
-
-
 /* Classe para animação */
 .animate-slide-in {
   opacity: 0;
@@ -566,4 +563,13 @@ details summary {
 .animate-slide-in.active {
   opacity: 1;
   transform: translateY(0);
+}
+.whiteText {
+  color: white;
+  background-color: black;
+}
+
+.blackText {
+  color: black;
+  background-color: white;
 }
