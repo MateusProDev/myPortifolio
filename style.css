@@ -657,11 +657,11 @@ details summary {
   }
   #profile {
     /* Esconda o perfil para dar mais espaço ao conteúdo */
-    height: 90vh;
+    height: 85vh;
   }
 
   #content {
-    height: 90vh;
+    height: 85vh;
   }
   /* Ajuste do cabeçalho para ocupar mais espaço horizontalmente */
   header {
