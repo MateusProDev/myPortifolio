@@ -655,7 +655,14 @@ details summary {
   body {
     font-size: 18px;
   }
+  #profile {
+    /* Esconda o perfil para dar mais espaço ao conteúdo */
+    height: 90vh;
+  }
 
+  #content {
+    height: 90vh;
+  }
   /* Ajuste do cabeçalho para ocupar mais espaço horizontalmente */
   header {
     width: 50%;
