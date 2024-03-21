@@ -649,6 +649,67 @@ details summary {
   }
 }
 
+/* Estilos para dispositivos de tela grande (desktops, laptops) */
+@media screen and (min-width: 1025px) {
+  /* Aumentar o tamanho da fonte */
+  body {
+    font-size: 18px;
+  }
+
+  /* Ajuste do cabeçalho para ocupar mais espaço horizontalmente */
+  header {
+    width: 50%;
+    right: 0;
+    left: auto;
+  }
+
+  /* Ajuste do logotipo para ocupar mais espaço horizontalmente */
+  .logo img {
+    width: 120px;
+  }
+
+  /* Ajuste dos links de navegação para ocupar mais espaço horizontalmente */
+  nav {
+    margin-left: -20px;
+  }
+  .nav-links li {
+    margin: 0 20px; /* Aumentar o espaçamento entre os links */
+  }
+
+  /* Ajuste dos títulos das seções para uma melhor legibilidade */
+  #about h1,
+  #myProjects h1,
+  #technology h1 {
+    font-size: 40px;
+  }
+  .boxCards {
+    width: 40%;
+  }
+  /* Ajuste do tamanho dos ícones nos cards */
+  .boxCards img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Ajuste do tamanho das imagens nos cards de projetos */
+  .boxCardsPro img {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Ajuste do tamanho dos ícones nos cards de tecnologia */
+  .boxCardsTech img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Ajuste do tamanho do texto do summary dentro dos detalhes */
+  details summary {
+    font-size: 26px;
+  }
+}
+
+
 /* Classe para animação */
 .animate-slide-in {
   opacity: 0;
