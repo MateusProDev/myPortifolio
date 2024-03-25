@@ -296,16 +296,16 @@ nav {
 #mac {
   height: 130px;
 }
-.viewsProjects{
+.viewsProjects {
   margin: 0 20px 0 0 !important;
 }
-.reposImg img{
+.reposImg img {
   position: absolute;
   width: 40px !important;
   height: 40px !important;
   margin: -8px 0 0 -10px !important;
 }
-.reposImg img:hover{
+.reposImg img:hover {
   transform: scale(1.1);
 }
 /* seção de contatos  */
@@ -387,17 +387,19 @@ hr {
 #imgTop:hover {
   transform: scale(1.1);
 }
-.topMobile{
+.topMobile {
   display: none;
 }
-.topDesk{
+.topDesk {
   display: block;
   margin: 0 25px 10px 0;
 }
 
 @keyframes float {
   0% {
-    transform: translateY(0); /* Alterado de 'margin-top' para 'transform: translateY' */
+    transform: translateY(
+      0
+    ); /* Alterado de 'margin-top' para 'transform: translateY' */
   }
   50% {
     transform: translateY(-5px); /* Movendo a imagem para cima */
@@ -406,7 +408,171 @@ hr {
     transform: translateY(0); /* Voltando a imagem para a posição inicial */
   }
 }
-
+/* responsividade para smart  */
+@media only screen and (max-width: 287px) {
+  #content {
+    width: 100%;
+    padding: 0 !important;
+    gap: 0px !important;
+  }
+  #about {
+    padding: 0 5px !important;
+    margin-top: -100px !important;
+  }
+  .title {
+    margin-top: 50px !important;
+    font-size: 22px !important;
+  }
+  .pAbout {
+    margin-top: -0px !important;
+  }
+  #lineAbout {
+    margin: 75px 0 0 0;
+  }
+  #about p {
+    font-size: 12px !important;
+  }
+  nav {
+    border-radius: 0 0 5px 0 !important;
+    padding: 5px !important;
+    background-color: #3e3e3e;
+    box-shadow: -1px -1px 4px 4px #3a3a3a67;
+  }
+  .lines {
+    margin-left: 5px !important;
+  }
+  .line {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    margin-right: 20px !important;
+  }
+  .nav-links.active {
+    width: 100% !important;
+    top: 20px !important;
+    padding: 10px 10px 10px 0;
+  }
+  .nav-links.active li {
+    margin-bottom: 10px !important;
+    font-size: 12px !important;
+  }
+  .boxCards {
+    height: auto !important;
+    padding: 0 10px 18px 0 !important;
+    margin: 5px 2px !important;
+    border-radius: 5px !important;
+  }
+  .boxCards img {
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+  }
+  .boxCards h3 {
+    font-size: 12px;
+  }
+  .cardsText p,
+  .boxCardsPro p {
+    margin: -5px !important;
+    font-size: 10px !important;
+  }/* seção dos projetos  */
+/* cards responsivos */
+#cardsProjects {
+  display: flex;
+  width: 100%;
+  margin: 0 !important;
+  flex-wrap: wrap;
+  justify-content: center; /* Centralizar os cards horizontalmente */
+}
+.cardsTextPro {
+  margin-left: 10px;
+}
+.cardsTextPro h3 {
+  font-size: 12px;
+  margin:0 0 10px -5px;
+}
+.cardsTextPro p {
+  font-size: 10px !important;
+}
+.btnPro {
+  font-size: 10px ;
+  padding: 2px 2px;
+  margin-top: 20px;
+}
+#mac {
+  height: 130px;
+}
+.reposImg img {
+  position: absolute;
+  width: 25px !important;
+  height: 25px !important;
+  margin: 15px 0 0 -15px !important;
+}
+.boxCardsPro {
+  height: auto !important;
+  background-color: #333333a1;
+  padding: 10px 5px !important;
+  margin: 5px 0 !important;
+  border-radius: 5px !important;
+  z-index: 999;
+  box-shadow: 2px 2px 2px 4px #00000023;
+}
+.boxCardsPro:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 1px 1px 4px 2px #f29e384b !important;
+}
+.boxCardsPro img {
+  width: 50px;
+  height: 50px;
+}
+  #about p,
+  #myProjects p,
+  #technology p {
+    margin: 20px 0;
+    color: #e1e1e1;
+    font-size: 10px !important;
+  }
+  .utily{
+    margin-left: 10px !important;
+    font-size: 13px !important;
+  }
+  .boxCardsTech{
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .boxCardsTech img {
+    width: 20px !important;
+    height: 20px !important;
+    margin: auto;
+  }
+  footer {
+    color: #c9d1d9; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+  }
+  
+  /* Estilos para os detalhes (summary) */
+  details summary {
+    font-size: 16px !important;
+    color: #f29d38; /* Cor do texto do summary */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Ícone de cursor de apontador */
+  }
+  details p{
+    font-size: 12px !important;
+  }
+  #copy{
+    font-size: 12px !important;
+  }
+  #imgTop {
+    z-index: 999;
+    position: absolute !important; /* Alterado para 'fixed' para que a imagem flutue na tela */
+    right: 10px;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+    animation: float 3s ease-in-out infinite; /* Alterada a duração para 3 segundos e o efeito para 'ease-in-out' */
+  }
+}
 
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
@@ -534,34 +700,34 @@ hr {
     box-shadow: 2px 2px 2px 4px #00000023;
   }
   /* tech  */
-.boxCardsTech {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  background-color: #333333a1;
-}
-.boxCardsTech:hover {
-  transform: scale(1.1) !important;
-  box-shadow: 1px 1px 4px 2px #f29e384b !important;
-}
-.boxCardsTech img {
-  width: 40px;
-  height: 40px;
-}
-/* Estilos para os detalhes (summary) */
-details summary {
-  font-size: 24px;
-  color: #f29d38; /* Cor do texto do summary */
-  font-weight: bold; /* Negrito */
-  cursor: pointer; /* Ícone de cursor de apontador */
-}
+  .boxCardsTech {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #333333a1;
+  }
+  .boxCardsTech:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 1px 1px 4px 2px #f29e384b !important;
+  }
+  .boxCardsTech img {
+    width: 40px;
+    height: 40px;
+  }
+  /* Estilos para os detalhes (summary) */
+  details summary {
+    font-size: 24px;
+    color: #f29d38; /* Cor do texto do summary */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Ícone de cursor de apontador */
+  }
 
-.topDesk{
-  display: none;
-}
-.topMobile{
-  display: block;
-}
+  .topDesk {
+    display: none;
+  }
+  .topMobile {
+    display: block;
+  }
 }
 
 /* Estilos para dispositivos de tamanho médio (tablets) */
@@ -726,7 +892,6 @@ details summary {
     font-size: 26px;
   }
 }
-
 
 /* Classe para animação */
 .animate-slide-in {
