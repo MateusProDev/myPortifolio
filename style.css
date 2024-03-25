@@ -296,7 +296,18 @@ nav {
 #mac {
   height: 130px;
 }
-
+.viewsProjects{
+  margin: 0 20px 0 0 !important;
+}
+.reposImg img{
+  position: absolute;
+  width: 40px !important;
+  height: 40px !important;
+  margin: -8px 0 0 -10px !important;
+}
+.reposImg img:hover{
+  transform: scale(1.1);
+}
 /* seção de contatos  */
 /* cards responsivos */
 .cardsTechs {
