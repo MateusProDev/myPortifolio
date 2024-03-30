@@ -92,7 +92,14 @@ p {
   margin: 0px;
   font-size: 16px !important;
 }
-
+.boxIcons a{
+  text-decoration: none;
+  color: white;
+}
+#iconsImg{
+  width: 20px;
+  height: 20px;
+}
 /* cards responsivos */
 #cards {
   display: flex;
