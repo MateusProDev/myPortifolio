@@ -5,7 +5,7 @@ function wait(ms) {
   
   // Função para mostrar o prompt após 5 segundos
   async function showPromptAfterDelay() {
-    await wait(1000); // Aguarda 10 segundos
+    await wait(10000); // Aguarda 10 segundos
   
     const user1 = prompt("Olá, me chamo Mateus, qual é o seu nome? ");
   
