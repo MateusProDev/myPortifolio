@@ -42,46 +42,47 @@ function wait(ms) {
   // Chama a função para mostrar o prompt
   showPromptAfterDelay();
   
-  // Lógica do header responsivo
-  const lines = document.querySelector('.lines');
-  const navLinks = document.querySelector('.nav-links');
-  
-  lines.addEventListener('click', () => {
-    lines.classList.toggle('active');
-    navLinks.classList.toggle('active');
-  });
-  
-  // Função para adicionar animações quando um elemento entra no viewport
-  function animateOnScroll(entries, observer) {
+  // logica do header responsivo 
+const lines = document.querySelector('.lines');
+const navLinks = document.querySelector('.nav-links');
+
+lines.addEventListener('click', () => {
+  lines.classList.toggle('active');
+  navLinks.classList.toggle('active');
+});
+
+
+// Função para adicionar animações quando um elemento entra no viewport
+function animateOnScroll(entries, observer) {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        observer.unobserve(entry.target); // Parar de observar o elemento após a animação ser aplicada
-      }
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target); // Parar de observar o elemento após a animação ser aplicada
+        }
     });
-  }
-  
-  // Criar um observador para animar os elementos quando entrarem no viewport
-  const observer = new IntersectionObserver(animateOnScroll, { threshold: 0.5 });
-  
-  // Selecionar todos os elementos que serão animados
-  const elementsToAnimate = Array.from(document.querySelectorAll('.animate-slide-in')); // Converte NodeList para Array
-  
-  // Registrar cada elemento no observador
-  elementsToAnimate.forEach(element => {
+}
+
+// Criar um observador para animar os elementos quando entrarem no viewport
+const observer = new IntersectionObserver(animateOnScroll, { threshold: 0.5 });
+
+// Selecionar todos os elementos que serão animados
+const elementsToAnimate = document.querySelectorAll('.animate-slide-in');
+
+// Registrar cada elemento no observador
+elementsToAnimate.forEach(element => {
     observer.observe(element);
-  });
-  
-  // Ativar as animações para os elementos que já estão visíveis na página
-  animateOnScroll(elementsToAnimate.map(element => ({ target: element, isIntersecting: isElementInViewport(element) })), observer);
-  
-  // Função para verificar se um elemento está visível no viewport
-  function isElementInViewport(el) {
+});
+
+// Ativar as animações para os elementos que já estão visíveis na página
+animateOnScroll(elementsToAnimate.map(element => ({ target: element, isIntersecting: isElementInViewport(element) })), observer);
+
+// Função para verificar se um elemento está visível no viewport
+function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-  }
+}
