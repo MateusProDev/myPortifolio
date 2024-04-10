@@ -92,11 +92,11 @@ p {
   margin: 0px;
   font-size: 16px !important;
 }
-.boxIcons a{
+.boxIcons a {
   text-decoration: none;
   color: white;
 }
-#iconsImg{
+#iconsImg {
   width: 20px;
   height: 20px;
 }
@@ -482,56 +482,56 @@ hr {
   .boxCardsPro p {
     margin: -5px !important;
     font-size: 10px !important;
-  }/* seção dos projetos  */
-/* cards responsivos */
-#cardsProjects {
-  display: flex;
-  width: 100%;
-  margin: 0 !important;
-  flex-wrap: wrap;
-  justify-content: center; /* Centralizar os cards horizontalmente */
-}
-.cardsTextPro {
-  margin-left: 10px;
-}
-.cardsTextPro h3 {
-  font-size: 12px;
-  margin:0 0 10px -5px;
-}
-.cardsTextPro p {
-  font-size: 10px !important;
-}
-.btnPro {
-  font-size: 10px ;
-  padding: 2px 2px;
-  margin-top: 20px;
-}
-#mac {
-  height: 130px;
-}
-.reposImg img {
-  position: absolute;
-  width: 25px !important;
-  height: 25px !important;
-  margin: 15px 0 0 -15px !important;
-}
-.boxCardsPro {
-  height: auto !important;
-  background-color: #333333a1;
-  padding: 10px 5px !important;
-  margin: 5px 0 !important;
-  border-radius: 5px !important;
-  z-index: 999;
-  box-shadow: 2px 2px 2px 4px #00000023;
-}
-.boxCardsPro:hover {
-  transform: scale(1.02) !important;
-  box-shadow: 1px 1px 4px 2px #f29e384b !important;
-}
-.boxCardsPro img {
-  width: 50px;
-  height: 50px;
-}
+  } /* seção dos projetos  */
+  /* cards responsivos */
+  #cardsProjects {
+    display: flex;
+    width: 100%;
+    margin: 0 !important;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralizar os cards horizontalmente */
+  }
+  .cardsTextPro {
+    margin-left: 10px;
+  }
+  .cardsTextPro h3 {
+    font-size: 12px;
+    margin: 0 0 10px -5px;
+  }
+  .cardsTextPro p {
+    font-size: 10px !important;
+  }
+  .btnPro {
+    font-size: 10px;
+    padding: 2px 2px;
+    margin-top: 20px;
+  }
+  #mac {
+    height: 130px;
+  }
+  .reposImg img {
+    position: absolute;
+    width: 25px !important;
+    height: 25px !important;
+    margin: 15px 0 0 -15px !important;
+  }
+  .boxCardsPro {
+    height: auto !important;
+    background-color: #333333a1;
+    padding: 10px 5px !important;
+    margin: 5px 0 !important;
+    border-radius: 5px !important;
+    z-index: 999;
+    box-shadow: 2px 2px 2px 4px #00000023;
+  }
+  .boxCardsPro:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 1px 1px 4px 2px #f29e384b !important;
+  }
+  .boxCardsPro img {
+    width: 50px;
+    height: 50px;
+  }
   #about p,
   #myProjects p,
   #technology p {
@@ -539,11 +539,11 @@ hr {
     color: #e1e1e1;
     font-size: 10px !important;
   }
-  .utily{
+  .utily {
     margin-left: 10px !important;
     font-size: 13px !important;
   }
-  .boxCardsTech{
+  .boxCardsTech {
     width: 20px !important;
     height: 20px !important;
   }
@@ -556,7 +556,7 @@ hr {
     color: #c9d1d9; /* Cor do texto */
     padding: 10px; /* Espaçamento interno */
   }
-  
+
   /* Estilos para os detalhes (summary) */
   details summary {
     font-size: 16px !important;
@@ -564,10 +564,10 @@ hr {
     font-weight: bold; /* Negrito */
     cursor: pointer; /* Ícone de cursor de apontador */
   }
-  details p{
+  details p {
     font-size: 12px !important;
   }
-  #copy{
+  #copy {
     font-size: 12px !important;
   }
   #imgTop {
@@ -920,4 +920,42 @@ hr {
 .blackText {
   color: black;
   background-color: white;
+}
+
+/* estilo da notificação */
+
+.notification-container {
+  width: auto;
+  margin: auto;
+  display: none;
+  z-index: 997;
+}
+
+.time {
+  position: absolute;
+  bottom: 35px;
+  padding: 20px;
+  color: #121212;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 998;
+  font-family: Arial, sans-serif;
+  
+}
+
+
+.close-btn {
+  position: absolute;
+  bottom: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: #999999;
+}
+
+.close-btn:hover {
+  color: #555555;
 }
