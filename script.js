@@ -7,7 +7,7 @@ function wait(ms) {
   async function showPromptAfterDelay() {
     await wait(10000); // Aguarda 10 segundos
   
-    const user1 = prompt("Olá, me chamo Mateus, qual é o seu nome? ");
+    const user1 = prompt("Hello, my name is Mateus, what's your name? ");
   
     // Verifica se o usuário inseriu um nome
     if (user1) {
