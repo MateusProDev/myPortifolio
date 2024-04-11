@@ -1,46 +1,65 @@
 // Função para esperar determinado tempo
 function wait(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Verifica se o input já foi mostrado anteriormente
+let inputMostrado = localStorage.getItem('inputMostrado') === 'true';
+
+// Função para mostrar o input após 5 segundos
+async function showInputAfterDelay() {
+  await wait(8000); // Aguarda 5 segundos
+
+  // Verifica se o input já foi mostrado
+  if (!inputMostrado) {
+    const mainContainer = document.querySelector('.main-container');
+    mainContainer.style.display = 'block'; // Mostra o formulário após o tempo de espera
+
+    // Adiciona o evento de clique ao botão de fechar a mensagem
+    const btnFecharMsg = document.getElementById('btnFecharMsg');
+    btnFecharMsg.addEventListener('click', function() {
+      // Oculta a mensagem
+      let mensagem = document.getElementById('welcome-message');
+      mensagem.style.display = "none";
+
+      // Define a variável para indicar que o input foi mostrado
+      inputMostrado = true;
+      // Armazena o estado do inputMostrado no localStorage
+      localStorage.setItem('inputMostrado', 'true');
+    });
   }
-  
-  // Função para mostrar o prompt após 5 segundos
-  async function showPromptAfterDelay() {
-    await wait(10000); // Aguarda 10 segundos
-  
-    const user1 = prompt("Hello, my name is Mateus, what's your name? ");
-  
-    // Verifica se o usuário inseriu um nome
-    if (user1) {
-      // Suponho que a função sayTime esteja definida em outro arquivo (userTime.js)
-      // Substitua o seguinte bloco pela sua implementação atual da função sayTime
-      function sayTime(userName) {
-        const notificationDisplayed = localStorage.getItem('notificationDisplayed');
-  
-        if (!notificationDisplayed) {
-          const not = document.querySelector('.notification-container');
-          not.style.display = "block";
-  
-          const time = document.querySelector('.time');
-          time.textContent = "Welcome, " + userName + ", I hope to surprise you with my portfolio";
-          time.style.display = "block";
-  
-          const closeButton = document.getElementById('btnTimeNone');
-          closeButton.style.display = "block";
-  
-          closeButton.addEventListener('click', () => {
-            time.style.display = "none";
-            closeButton.style.display = "none";
-            localStorage.setItem('notificationDisplayed', 'true');
-          });
-        }
-      }
-  
-      sayTime(user1);
-    }
+}
+
+// Chama a função para mostrar o input após 5 segundos
+showInputAfterDelay();
+
+
+// Evento de submissão do formulário
+document.getElementById('user-name-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+
+  const userNameInput = document.getElementById('user-name-input');
+  const userName = userNameInput.value.trim(); // Obtém o valor do input removendo espaços em branco extras
+
+  if (userName) {
+    // Exibe a mensagem de boas-vindas com o nome do usuário
+    const welcomeMessage = document.getElementById('welcome-message');
+    welcomeMessage.querySelector('p').textContent = `Welcome, ${userName}! I hope to surprise you with my skills.`;
+    welcomeMessage.classList.remove('hidden');
+
+    // Oculta o formulário
+    const formContainer = document.querySelector('.form-container');
+    formContainer.style.display = 'none';
+
+    // Limpa o campo de entrada
+    userNameInput.value = '';
+  } else {
+    alert('Por favor, insira seu nome.');
   }
-  
-  // Chama a função para mostrar o prompt
-  showPromptAfterDelay();
+});
+
+
+
   
   // logica do header responsivo 
 const lines = document.querySelector('.lines');
@@ -86,3 +105,5 @@ function isElementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+

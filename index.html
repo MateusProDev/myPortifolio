@@ -8,12 +8,20 @@
   </head>
   <body>
     <main>
-      <div class="notification-container">
-        <div id="time" class="time">
-    
+      <div class="main-container">
+        <div class="form-container">
+          <p>Hello, my name is Mateus, Please inform your name:</p>
+          <form id="user-name-form">
+            <input type="text" id="user-name-input" placeholder="Digite Seu Nome">
+            <button type="submit">Submit</button>
+          </form>
         </div>
-        <button id="btnTimeNone" class="close-btn">Fechar X</button>
-    </div>
+        <div class="welcome-message hidden" id="welcome-message">
+          <p></p>
+          <button id="btnFecharMsg">Close X</button>
+         <img src="img/myPhoto.jpg" alt="MyPhoto">
+        </div>
+      </div>
       <section class="flexContent animate-slide-in" id="profile">
         <div id="avatarImg" class="center">
           <img src="img/perfilgit.jpeg" alt="foto do perfil" />
@@ -23,7 +31,7 @@
           👋 Hello! My name is Mateus, a passionate Front-End developer in
           constant search to learn and create amazing experiences on the web.
         </p>
-        <div>
+        <div class="btnDoGithub">
           <a href="https://1drv.ms/w/s!Asrq9ksgKbAvizBf5rOxHeJirGnc?e=KxmFA9"><button class="btnProfile">Download CV</button></a>
           <a href="https://github.com/MateusProDev"><button class="btnProfile">GitHub</button></a>
         </div>
@@ -98,7 +106,7 @@
           <div id="containerCards">
             <h2 class="animate-slide-in utily">What I'm Doing</h2>
             <div id="cards">
-              <div class="boxCards iconsFlex animate-slide-in onmouseover="setFocus(this)" onmouseout="removeFocus(this)">
+              <div class="boxCards iconsFlex animate-slide-in">
                 <img src="img/Window Color.png" alt="img" />
                 <div class="cardsText">
                   <h3>Web Design</h3>
@@ -109,7 +117,7 @@
                   </p>
                 </div>
               </div>
-              <div class="boxCards iconsFlex animate-slide-in onmouseover="setFocus(this)" onmouseout="removeFocus(this)">
+              <div class="boxCards iconsFlex animate-slide-in">
                 <img src="img/Google Code.png" alt="img" />
                 <div class="cardsText">
                   <h3>Web Development</h3>
@@ -120,7 +128,7 @@
                   </p>
                 </div>
               </div>
-              <div class="boxCards iconsFlex animate-slide-in onmouseover="setFocus(this)" onmouseout="removeFocus(this)">
+              <div class="boxCards iconsFlex animate-slide-in">
                 <img src="img/JavaScript.png" alt="img" />
                 <div class="cardsText">
                   <h3>Front-End</h3>
@@ -131,7 +139,7 @@
                   </p>
                 </div>
               </div>
-              <div class="boxCards iconsFlex animate-slide-in onmouseover="setFocus(this)" onmouseout="removeFocus(this)">
+              <div class="boxCards iconsFlex animate-slide-in">
                 <img src="img/Rest API.png" alt="img" />
                 <div class="cardsText">
                   <h3>Beck-End</h3>

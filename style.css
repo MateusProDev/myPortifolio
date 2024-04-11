@@ -51,7 +51,7 @@ main {
 .btnProfile {
   margin: 20px 5px 0 0;
   padding: 4px 6px;
-  background-color: #ddd;
+  background-color: #;
   box-shadow: 2px 2px 2px #333;
   border: none;
   border-radius: 5px;
@@ -299,6 +299,11 @@ nav {
 }
 .btnPro {
   margin-top: -20px;
+  color: #333;
+}
+.btnPro:hover{
+  margin-top: -20px;
+  background-color: #8d8d8d;
 }
 #mac {
   height: 130px;
@@ -668,6 +673,7 @@ hr {
   #profile {
     display: none;
   }
+  
   #content {
     width: 100%;
     margin-left: 0%;
@@ -898,6 +904,11 @@ hr {
   details summary {
     font-size: 26px;
   }
+  .main-container {
+  width: 400px !important;
+  right: 20px;
+  top: 20px;
+}
 }
 
 /* Classe para animação */
@@ -924,41 +935,98 @@ hr {
 
 /* estilo da notificação */
 
-.notification-container {
-  width: auto;
-  margin: auto;
+    .welcome-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Estilo da mensagem de boas-vindas */
+    .welcome-message {
+      font-size: 16px;
+      color: #222;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 10px 10px 10px 0px;
+      position: fixed;
+      margin: 0 30px 10px 10px;
+      left: 20px;
+      bottom: 42px;
+      box-shadow: 4px 4px 4px #333333;
+    }
+    #btnFecharMsg{
+      position: absolute;
+      bottom: -22px;
+      padding: 2px 7px;
+      right: 0;
+    }
+    .welcome-message img{
+      width: 40px;
+      position: absolute;
+      left: -20px;
+      bottom: -47px;
+      border-radius: 50%;
+      box-shadow: 4px 4px 4px #333333;
+    }
+
+    /* Estilo do botão */
+    .welcome-button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .welcome-button:hover {
+      background-color: #0056b3;
+    }
+
+/* estilo do input  */
+.main-container {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  justify-content: center;
+  transition: 2s ease-in-out;
   display: none;
-  z-index: 1000;
-
 }
 
-.time {
-  position: absolute;
-  bottom: 35px;
-  right: 100px;
+.form-container {
+  background-color: #333333f2;
   padding: 20px;
-  color: #121212;
-  background-color: #fff;
-  border: 2px solid #333;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  font-family: Arial, sans-serif;
-  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.form-container p {
+  margin: 10px 0;
+  font-size: 24px !important;
+}
 
-.close-btn {
-  position: absolute;
-  bottom: 10px;
-  right: 100px;
-  background: none;
+input[type="text"] {
+  width: 94%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f29d38;
+  color: #fff;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 1em;
-  color: #999999;
 }
 
-.close-btn:hover {
-  color: #555555;
+button:hover {
+  background-color: #955200;
+}
+
+.hidden {
+  display: none;
 }
